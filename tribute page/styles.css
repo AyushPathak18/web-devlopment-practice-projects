@@ -1,0 +1,93 @@
+html{
+    font-size:10px;
+  }
+  body{
+    font-size:1.6rem;
+    text-align:center;
+    color:black;
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif
+  }
+  #main{
+    margin:30px 8px;
+    padding:15px;
+    border-radius:5px;
+    background:#eee;
+  }
+  #title{
+    margin-top:5px;
+  }
+  main{
+    display:block;
+  }
+  
+  #main p{
+    font-weight:100;
+    font-size:12px;
+    margin-top:10px;
+  }
+  figure{
+    display:block;
+  }
+  #img-div{
+    background:white;
+    margin:0;
+    padding:10px;
+  }
+  img{
+    margin:0;
+    height:600px;
+    max-width:100%;
+  }
+  #img-caption{
+    font-size:10px;
+    margin:15px 0 5px 0;
+  }
+  fig-caption{
+     display:block;
+     
+  }
+  section {
+      display: block;
+  }
+  #headline {
+      margin: 50px 0;
+      text-align: center;
+  }
+  h3 {
+      display: block;
+      font-size: 1.17em;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+      unicode-bidi: isolate;
+  }
+  
+  ul{
+    display:block;
+    max-width:100%;
+    margin-left:120px;
+    line-height:1.1;
+    padding-left:70px;
+    padding-right:70px;
+    text-align:left;
+    font-size:0.7em;
+    margin-block-start: 1.2em;
+      margin-block-end: 1.2em;
+  }
+  li{
+    margin:20px 0;
+    font-weight:100;
+    font-size:1em;
+  }
+  li {
+      display: list-item;
+      text-align: -webkit-match-parent;
+      unicode-bidi: isolate;
+  }
+  strong{
+    margin:10px 0;
+  }
+  
