@@ -90,4 +90,13 @@ html{
   strong{
     margin:10px 0;
   }
-  
+  blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    font-weight:250;
+}
+a{
+  color:blue;
+}
