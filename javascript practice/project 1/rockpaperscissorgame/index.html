@@ -4,18 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
+    <style>
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin:0px;
+            display: block;
+            position:relative;
+            text-align: center;
+            background-color: #f4f4f9;
+        }
+        .title{
+            font-weight: bold;
+            text-align: center;
+            font-size: 40px;
+            color:rgb(61, 65, 48);
+            border:2px solid rgb(240,240,240);
+            padding: 10px;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            background-color: white;
+        }
+        img{
+            height: 100px;
+            width:200px;    
+        }
+        .div1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .item {
+            display: flex;
+            flex-direction: column; /* Stack image and button vertically */
+            align-items: center;
+        }
+        button{
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+        }
+      button img:hover {
+      transform: scale(1.1); /* Slight zoom effect */
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    </style>
 </head>
 <body>
-    <p>Rock Paper Scissors</p>
+    <p class="title">Rock Paper Scissors</p>
+    <div class="div1">
+    <div class="item"><
+    <img src="https://imgs.search.brave.com/D4kbXHdCucAcKSDaprTf1ttalBoAmvjEgAHwl3DITik/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL25ld19nYWxs/ZXJ5LzIyMC0yMjA3/MjkyX2dpYW50LXN0/b25lLW1vbnN0ZXIt/Y2FydG9vbi1yb2Nr/LW1vbnN0ZXIucG5n" alt="rock">
     <button onclick="
     playergamer('Rock'); 
-        ">Rock</button>
+        " class="Rock">Rock</button>
+        /div>
+    <div class="item">
+    <img src="https://clipart-library.com/images_k/newspaper-transparent/newspaper-transparent-17.png" alt="paper">
     <button onclick="
     playergamer('Paper');
     ">Paper</button>
+    </div>
+    <div class="item">
+    <img src="https://static.vecteezy.com/system/resources/previews/047/105/535/original/cartoon-happy-scissors-cartoon-character-free-vector.jpg" alt="Scissors">
     <button onclick="
-    playergamer('Scissor');
+    playergamer('Scissors');
     ">Scissor</button>
+    </div>
+    </div>
 
     <p class="js-result"></p>
     <p class="js-moves"></p>
@@ -27,7 +93,7 @@
 
     <button onclick="
         score.wins=0;
-        score.looses=0;
+        score.losses=0;
         score.ties=0;
         localStorage.removeItem('score');
         updateScoreElement();
@@ -39,6 +105,7 @@
         losses: 0,
         ties: 0
       };
+
       updateScoreElement();
     
 
