@@ -44,23 +44,38 @@
             align-items: center;
         }
         button{
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            border-radius: 50px;
         }
-      button img:hover {
-      transform: scale(1.1); /* Slight zoom effect */
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
+        button img:hover {
+            transform: scale(1.1); /* Slight zoom effect */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .win {
+            color: green;
+            font-weight: bold;
+        }
+
+        .lose {
+            color: red;
+            font-weight: bold;
+        }
+
+        .tie {
+            color: gray;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -82,7 +97,7 @@
     <img src="pngwing.com.png" alt="Scissors">
     <button onclick="
     playergamer('Scissors');
-    ">Scissor</button>
+    ">Scissors</button>
     </div>
     </div>
 
@@ -121,7 +136,7 @@
                 result='You lose!';
             }
             else if(computermove==='Paper'){
-                result='You win!';
+                result='You Win!';
             }
             else if(computermove ==='Scissors'){
                 result='Tie.';
@@ -160,8 +175,18 @@
         localStorage.setItem('score', JSON.stringify(score));
         updateScoreElement();
 
-        document.querySelector('.js-result').
-        innerHTML=result;
+        const resultElement=document.querySelector('.js-result');
+        resultElement.innerHTML=result;
+
+        resultElement.classList.remove('win', 'lose', 'tie');
+
+        if (result === 'You Win!') {
+            resultElement.classList.add('win');
+         } else if (result === 'You lose!') {
+            resultElement.classList.add('lose');
+        } else if (result === 'Tie.') {
+            resultElement.classList.add('tie');
+    }
 
         document.querySelector('.js-moves').
         innerHTML=`You picked ${playergame}. Computer picked ${computermove}.`;
