@@ -53,30 +53,30 @@
             else if(computermove==='Paper'){
                 result='You win!';
             }
-            else if(computermove=="Scissors"){
-                result="Tie!";
+            else if(computermove ==='Scissors'){
+                result='Tie.';
             }
         }
-        if(playergame==='Rock'){
-            if(computermove=='Scissors'){
+        else if(playergame==='Rock'){
+            if(computermove ==='Scissors'){
                 result='You Win!';
             }
             else if(computermove==='Paper'){
                 result='You lose!';
             }
-            else if(computermove=="Rock"){
-                result="Tie.";
+            else if(computermove ==='Rock'){
+                result='Tie.';
             }
         }
-        if(playergame==='Paper'){
-            if(computermove==='Rock'){
+        else if(playergame==='Paper'){
+            if(computermove ==='Rock'){
                 result='You Win!';
             }
-            else if(computermove==='Scissors'){
+            else if(computermove ==='Scissors'){
                 result='You lose!';
             }
-            else if(computermove=="Paper"){
-                result="Tie.";
+            else if(computermove ==="Paper"){
+                result='Tie.';
             }
         }
         if (result === 'You Win!') {
@@ -96,7 +96,6 @@
         document.querySelector('.js-moves').
         innerHTML=`You picked ${playergame}. Computer picked ${computermove}.`;
     }
-       updateScoreElement();
       function updateScoreElement(){
         document.querySelector('.js-score')
         .innerHTML=`Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
