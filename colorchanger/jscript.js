@@ -23,7 +23,8 @@ rect.addEventListener("mousemove",function(details){
 
 rect.addEventListener("mouseleave",function(){
     gsap.to(rect,{
-        backgroundcolor:"white"
+        backgroundColor:"white",
+        ease:Power4.easeOut
     })
 
 })
