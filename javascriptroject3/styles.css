@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    overflow-x: hidden;
+    height:100vh;
+    width: 100vw;
+    background-color: #c4bcb3;
+    position: relative;
+}
+#nav{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 1px solid black ;
+}
+#nav img{
+    height: 30px;
+    width: 30%;
+}
+
+#nav h5{
+    font-size: 20px;
+    font-weight: 100;
+    width: 30%;
+}
+#nav i{
+    width: 30%;
+    text-align: right;
+}
+#elems{
+    height: 320px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+   
+}
+#elem1{
+    width: 30%;
+    height: 100%;
+}
+#elem2{
+    width: 30%;
+    height: 100%;
+    border-left: 1px solid #807d7d;
+    border-right: 1px solid #807d7d;
+    padding: 20px 60px;
+    text-align: center;
+}
+#elem3{
+    width: 30%;
+    height: 100%;
+}
+
+#elem1 #image-div{
+    height: 50%;
+    width:100%;
+    overflow: hidden;
+}
+
+#image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+#image-div:hover img{
+    scale:1.2;
+
+}
+
+
+#elem3 #image-div{
+    height: 50%;
+    width:100%;
+    overflow: hidden;
+}
+
+#elem1 h4{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#elem1 h4 span{
+    background-color: rgb(196, 95, 13);
+    border-radius: 5px;
+    padding:4px;
+    font-size: 18px;
+    font-weight: 100;
+    color:#c4bcb3;
+    margin-left: 10px;
+    opacity: 0.8;
+}
+#elem1 p{
+    font-size: 22px;
+    font-weight: 100;
+    color: #656565;
+}
+#elem3 h4{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#elem3 p{
+    font-size: 22px;
+    font-weight: 100;
+    color: #656565;
+}
+#elem3 h4 span{
+    background-color: rgb(196, 95, 13);
+    border-radius: 5px;
+    padding:4px;
+    font-size: 18px;
+    font-weight: 100;
+    color:#c4bcb3;
+    margin-left: 10px;
+    opacity: 0.8;
+}
+#elem2 h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#elem2 h3{
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+#elem2 h6{
+    font-size: 20px;
+    font-weight: 100;
+}
+#page1 h1{
+    font-size: 400px;
+    letter-spacing: -70px;
+    font-weight: 100;
+    background-color:#1c1c19;
+    color:#c4bcb3;
+    line-height: 400px;
+    margin-left: 2%;
+    width: 96%;
+}
