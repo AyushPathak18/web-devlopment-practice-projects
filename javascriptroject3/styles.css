@@ -13,7 +13,7 @@ html,body{
 }
 #page1{
     overflow: hidden;
-    height:100vh;
+    height:110vh;
     width: 100vw;
     background-color: #c4bcb3;
     position: relative;
@@ -156,7 +156,7 @@ html,body{
     width: 96%;
 }
 #page2{
-    height:100vh;
+    height:150vh;
     width: 100vw;
     background-color: #c4bcb3;
 }
