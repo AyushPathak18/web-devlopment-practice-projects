@@ -188,3 +188,6 @@ html,body{
 #page2-right{
     height: 100%;
 }
+#page2-right img{
+    height: auto;
+}
