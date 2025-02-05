@@ -190,4 +190,5 @@ html,body{
 }
 #page2-right img{
     height: auto;
+    mask-border-width:th;
 }
